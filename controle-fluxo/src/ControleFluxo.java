@@ -59,7 +59,5 @@ public class ControleFluxo {
                 break;
         }
 
-        // Ternário
-
     }
 }
