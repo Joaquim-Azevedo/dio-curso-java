@@ -1,8 +1,12 @@
 public class AboutMe {
+    /*
+     * Projeto executável pelo terminal ou passando os argumentos pelo arquivo
+     * launch.json na pasta bin.
+     * Comando terminal (localizar a pasta 'bin' primeiro): java (Classe)
+     * (argumentos)
+     * Ex.: java AboutMe Joaquim Azevedo 19 1.76
+     */
     public static void main(String[] args) {
-        // Projeto executável pelo terminal.
-        // Comando terminal (localizar a pasta 'bin' primeiro): java (Classe) (argumentos)
-        // Ex.: java AboutMe Joaquim Azevedo 19 1.76
 
         String meuNome = args[0];
         String meuSobrenome = args[1];
