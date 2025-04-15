@@ -45,6 +45,33 @@ public class Main {
 
         Emprestimo.calcular(valor, parcelas);
 
+        // Cálculo Trapézio com *Sobrecarga* no parâmetro.
+
+        double lado, lado1, lado2, baseMenor, baseMaior, altura;
+
+        System.out.print("Digite o lado do quadrado: ");
+        lado = input.nextDouble();
+
+        CalculoQuadrilateros.area(lado);
+
+        System.out.print("Digite o lado do retângulo: ");
+        lado1 = input.nextDouble();
+
+        System.out.print("Digite a altura do retângulo: ");
+        lado2 = input.nextDouble();
+
+        CalculoQuadrilateros.area(lado1, lado2);
+
+        System.out.print("Digite a base menor do trapézio: ");
+        baseMenor = input.nextDouble();
+
+        System.out.print("Digite a base maior do trapézio: ");
+        baseMaior = input.nextDouble();
+
+        System.out.print("Digite a altura do trapézio: ");
+        altura = input.nextDouble();
+
+        CalculoQuadrilateros.area(baseMaior, baseMenor, altura);
         input.close();
     }
 }
