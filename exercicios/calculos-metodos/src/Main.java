@@ -72,6 +72,36 @@ public class Main {
         altura = input.nextDouble();
 
         CalculoQuadrilateros.area(baseMaior, baseMenor, altura);
+
+        // Exercício Cálculo Quadriláteros usando return
+
+        System.out.print("Digite o lado do quadrado: ");
+        lado = input.nextDouble();
+
+        double areaQuadrado = CalculoQuadrilaterosReturn.area(lado);
+        System.out.println("Área do quadrado: " + areaQuadrado);
+
+        System.out.print("Digite o lado do retângulo: ");
+        lado1 = input.nextDouble();
+
+        System.out.print("Digite a altura do retângulo: ");
+        lado2 = input.nextDouble();
+
+        double areaRetangulo = CalculoQuadrilaterosReturn.area(lado1, lado2);
+        System.out.println("Área do retângulo: " + areaRetangulo);
+
+        System.out.print("Digite a base menor do trapézio: ");
+        baseMenor = input.nextDouble();
+
+        System.out.print("Digite a base maior do trapézio: ");
+        baseMaior = input.nextDouble();
+
+        System.out.print("Digite a altura do trapézio: ");
+        altura = input.nextDouble();
+
+        double areaTrapezio = CalculoQuadrilaterosReturn.area(baseMaior, baseMenor, altura);
+        System.out.println("Área do trapézio: " + areaTrapezio);
+
         input.close();
     }
 }
